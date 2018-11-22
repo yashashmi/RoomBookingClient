@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class RoomAvailabilityService {
   private headers: HttpHeaders;
-  private accessPointUrl: string = 'https://localhost:44390/api/RoomsInfo/GetAllRooms';
+  private accessPointUrl: string = 'https://roombookingapidev.azurewebsites.net/api/RoomsInfo/GetAllRooms';
 
   constructor(private http: HttpClient) {
     this.headers = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8' });
