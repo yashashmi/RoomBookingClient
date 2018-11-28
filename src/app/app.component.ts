@@ -6,7 +6,4 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'RoomBookingUI';
-  @Input() roomData: Array<any>;
-  
 }
