@@ -13,7 +13,7 @@ export class ShowRoomsComponent implements OnInit {
   ngOnInit() {
     this.roomData.getAllRooms().subscribe(data => {
       this.rooms = data
-      console.log(this.rooms)
+      // console.log(this.rooms)
     });
   }
 }
