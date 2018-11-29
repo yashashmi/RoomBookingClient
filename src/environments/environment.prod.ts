@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api_url: 'https://roombookingui.azurewebsites.net/api/'
+  api_url: 'https://roombookingapidev.azurewebsites.net/api/'
 };
