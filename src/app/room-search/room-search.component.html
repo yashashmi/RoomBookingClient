@@ -2,11 +2,11 @@
   <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
     <label>
       From
-      <input type="datetime-local" formControlName="startDate" placeholder="MM-dd-yyyy HH:mm"/>
+      <input type="datetime-local" formControlName="startDate" placeholder="MM-dd-yyyy HH:mm" id="startDate"/>
     </label>
     <label>
       To
-      <input type="datetime-local" formControlName="endDate" />
+      <input type="datetime-local" formControlName="endDate" placeholder="MM-dd-yyyy HH:mm" id="endDate"/>
     </label>
     <button type="submit">Search</button>
   </form>
@@ -25,6 +25,7 @@
         <tbody>
           <tr *ngFor="let room of availableRooms">
             <td> {{room}}</td>
+            <td><button type="submit" (click) = "bookRoom()">Book</button></td>
             <!-- <td> {{room.roomName}}</td>
             <td> {{room.roomCapacity}}</td> -->
           </tr>

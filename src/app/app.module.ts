@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { RoomSearchComponent } from './room-search/room-search.component';
 import { ShowRoomsComponent } from './show-rooms/show-rooms.component';
-import{ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BookRoomComponent } from './book-room/book-room.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import{ReactiveFormsModule} from '@angular/forms';
     NavComponent,
     RoomSearchComponent,
     ShowRoomsComponent,
+    BookRoomComponent,
 
   ],
   imports: [
@@ -22,7 +24,7 @@ import{ReactiveFormsModule} from '@angular/forms';
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    ],
+  ],
 
 
   bootstrap: [AppComponent]
