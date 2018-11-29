@@ -8,6 +8,7 @@ import { RoomDataService } from '../room-data.service';
 })
 export class ShowRoomsComponent implements OnInit {
   rooms: Object;
+  availableRooms: Object;
   constructor(private roomData: RoomDataService) { }
 
   ngOnInit() {
@@ -15,5 +16,7 @@ export class ShowRoomsComponent implements OnInit {
       this.rooms = data
       // console.log(this.rooms)
     });
+
+    
   }
 }

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { RoomSearchComponent } from './room-search/room-search.component';
 import { ShowRoomsComponent } from './show-rooms/show-rooms.component';
+import{ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ShowRoomsComponent } from './show-rooms/show-rooms.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     ],
 
 
