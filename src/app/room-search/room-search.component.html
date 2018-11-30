@@ -25,7 +25,7 @@
         <tbody>
           <tr *ngFor="let room of availableRooms">
             <td> {{room}}</td>
-            <td><button type="submit" (click) = "bookRoom()">Book</button></td>
+            <td><button type="submit" (click) = "bookRoom(room)">Book</button></td>
             <!-- <td> {{room.roomName}}</td>
             <td> {{room.roomCapacity}}</td> -->
           </tr>

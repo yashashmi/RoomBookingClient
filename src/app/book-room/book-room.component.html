@@ -1,3 +1,29 @@
-<p>
-  book-room works!
-</p>
+<div class="container">
+  <form [formGroup]="bookRoomForm" (ngSubmit)="onSubmit()">
+      <label>
+          RoomId
+          <input type="text" formControlName="roomId"  id="roomId" />
+        </label>
+    <label>
+      From
+      <input type="datetime-local" formControlName="startDate" placeholder="MM-dd-yyyy HH:mm" id="StartDate" />
+    </label>
+    <label>
+      To
+      <input type="datetime-local" formControlName="endDate" placeholder="MM-dd-yyyy HH:mm" id="EndDate" />
+    </label>
+    <label>
+      Name
+      <input type="text" formControlName="name" id="Name" />
+    </label>
+    <label>
+      Email
+      <input type="email" formControlName="email" id="Email" />
+    </label>
+    <label>
+      Description
+      <input type="text" formControlName="description" id="Description" />
+    </label>
+    <button type="submit">Book</button>
+  </form>
+</div>
